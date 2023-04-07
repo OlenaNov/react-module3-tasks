@@ -1,0 +1,47 @@
+[
+    { 
+        "id": "0", 
+        "title": "Tao of React - Software Design, Architecture & Best Practices", 
+        "text": "I've been working with React since 2016 and still there isn't a single best practice when it comes to application structure and design. While there are best practices on the micro level, most teams build their own “thing” when it comes to architecture. Of course, there isn't a universal best practice that can be applied to all businesses and applications. But there are some general rules that we can follow to build a productive codebase. The purpose of a software's architecture and design is to keep it productive and flexible. Developers need to work on it effectively and modify it without rewriting its core. This article is a collection of principles and rules that have proven to be effective for me and the teams I've worked with. I outline good practices about components, application structure, testing, styling, state management and data fetching. Some of the examples are oversimplified so we can focus on the principle not on the implementation. Take everything here as an opinion, not an absolute. There's more than one way to build software."
+    },
+    { 
+        "id": "1", 
+        "title": "Favor Functional Components ", 
+        "text": "Favor functional components - they have a simpler syntax. No lifecycle methods, constructors or boilerplate. You can express the same logic with less characters without losing readability. Unless you need an error boundary they should be your go-to approach. The mental model you need to keep in your head is a lot smaller."
+    },
+    { 
+        "id": "2", 
+        "title": "Tao of React - Software Design, Architecture & Best Practices", 
+        "text": "I've been working with React since 2016 and still there isn't a single best practice when it comes to application structure and design. While there are best practices on the micro level, most teams build their own “thing” when it comes to architecture.  Of course, there isn't a universal best practice that can be applied to all businesses and applications. But there are some general rules that we can follow to build a productive codebase.  The purpose of a software's architecture and design is to keep it productive and flexible. Developers need to work on it effectively and modify it without rewriting its core.  This article is a collection of principles and rules that have proven to be effective for me and the teams I've worked with.  I outline good practices about components, application structure, testing, styling, state management and data fetching. Some of the examples are oversimplified so we can focus on the principle not on the implementation.  Take everything here as an opinion, not an absolute. There's more than one way to build software."
+    },
+    { 
+        "id": "3", 
+        "title": "Write Consistent Components ", 
+        "text": "Stick to the same style for your components. Put helper functions in the same place, export the same way and follow the same naming patterns. There isn't a real benefit of one approach over the other  No matter if you're exporting at the bottom of the file or directly in the definition of the component, pick one and stick to it."
+    },
+    { 
+        "id": "4", 
+        "title": "Name Components", 
+        "text": "Always name your components. It helps when you're reading an error stack trace and using the React Dev Tools. It's also easier to find where you are when developing if the component's name is inside the file."
+    },
+    { 
+        "id": "5", 
+        "title": "Organize Helper Functions ", 
+        "text": "Helper functions that don't need to hold a closure over the components should be moved outside. The ideal place is before the component definition so the file can be readable from top to bottom. That reduces the noise in the component and leaves inside only those that need to be there."
+    },
+    { 
+        "id": "6", 
+        "title": "Don't Hardcode Repetitive Markup", 
+        "text": "Don't hardcode markup for navigation, filters or lists. Use a configuration object and loop through the items instead. This means you only have to change the markup and items in a single place."
+    },
+    { 
+        "id": "7", 
+        "title": "Manage Component Size", 
+        "text": "A React component is just a function that gets props and returns markup. They adhere to the same software design principles. If a function is doing too many things, extract some of the logic and call another function. It's the same with components - if you have too much functionality, split it in smaller components and call them instead.  If a part of the markup is complex, requires loops and conditionals - extract it.  Rely on props and callbacks for communication and data. Lines of code are not an objective measure. Think about responsibilities and abstractions instead."
+    },
+    { 
+        "id": "8", 
+        "title": "Write Comments in JSX ", 
+        "text": "When something needs more clarity open a code block and provide the additional information just like you would in a regular function. The markup is a part of the logic so when you feel that something needs more clarity - provide it. Business logic is always coupled to the markup, at least a little. So we should provide any context about the domain that may not be obvious."
+    }
+]
